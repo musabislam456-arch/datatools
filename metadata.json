@@ -1,0 +1,6 @@
+{
+  "name": "DataTools",
+  "description": "Developer-focused client-side data format utility suite. Format, validate, and convert JSON, CSV, and XML with instant local processing and syntax highlighting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

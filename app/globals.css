@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Custom theme variables & typography */
+:root {
+  --code-font: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom scrollbar for dark developer theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Prism syntax highlighting for dark dev editor */
+pre code {
+  font-family: var(--code-font) !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #94a3b8;
+}
+
+.token.property {
+  color: #38bdf8; /* sky-400 */
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #f59e0b; /* amber-500 */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #34d399; /* emerald-400 */
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #c084fc; /* purple-400 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #818cf8; /* indigo-400 */
+}
+
+.token.function,
+.token.class-name {
+  color: #f43f5e; /* rose-500 */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e879f9; /* fuchsia-400 */
+}
+
+/* Editor line numbers */
+.line-numbers-rows {
+  user-select: none;
+}
