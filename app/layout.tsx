@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL || 'https://datatools.dev'),
+  metadataBase: new URL(process.env.APP_URL || 'https://datatools.toolbay.site'),
   title: {
     default: 'DataTools — Fast, Secure Developer Data Format Utilities',
     template: '%s | DataTools',
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description:
       'Format, validate, convert, and merge JSON, CSV, and XML instantly in your browser. Zero server uploads, 100% private.',
     type: 'website',
+    url: 'https://datatools.toolbay.site',
     siteName: 'DataTools',
   },
   twitter: {
@@ -59,4 +60,3 @@ export default function RootLayout({
     </html>
   );
 }
-
