@@ -3,7 +3,7 @@ import { TOOLS_CONFIG } from '@/lib/tools-data';
 import { BLOG_POSTS } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.APP_URL || 'https://datatools.dev';
+  const baseUrl = process.env.APP_URL || 'https://datatools.toolbay.site';
 
   const toolUrls: MetadataRoute.Sitemap = TOOLS_CONFIG.map((t) => ({
     url: `${baseUrl}${t.path}`,
