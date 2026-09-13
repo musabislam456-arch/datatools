@@ -28,13 +28,28 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://datatools.toolbay.site',
     siteName: 'DataTools',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'DataTools — Developer-Focused Data Format Utility Suite',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DataTools — Developer Data Utilities',
     description:
       'Fast, offline-ready JSON, CSV, and XML converters with code-editor UI and syntax highlighting.',
+    images: ['/opengraph-image'],
   },
+  icons: {
+    icon: '/icon',
+    shortcut: '/icon',
+    apple: '/apple-icon',
+  },
+  manifest: '/manifest.webmanifest',
   robots: {
     index: true,
     follow: true,
